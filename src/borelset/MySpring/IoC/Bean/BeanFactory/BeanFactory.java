@@ -1,0 +1,5 @@
+package borelset.MySpring.IoC.Bean.BeanFactory;
+
+public interface BeanFactory {
+    public Object getBean(String name);
+}

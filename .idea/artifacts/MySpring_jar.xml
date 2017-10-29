@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="MySpring:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MySpring_jar</output-path>
+    <root id="root">
+      <element id="archive" name="MySpring.jar">
+        <element id="module-output" name="MySpring" />
+        <element id="directory" name="libs">
+          <element id="file-copy" path="$PROJECT_DIR$/lib/aopalliance-.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/cglib-nodep-2.2.2.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

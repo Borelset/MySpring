@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Beans>
+    <bean id="ProxyCreator" class="borelset.MySpring.AOP.Pointcut.AutoProxyCreator"></bean>
+    <bean id="PointcutAdvisor" class="borelset.MySpring.AOP.Pointcut.PointcutAdvisor">
+        <property name="expression" value="Test.*.boomboombow()"></property>
+        <property name="interceptor" ref="mTimeInterceptor"></property>
+    </bean>
+    <bean id="mTimeInterceptor" class="Test.Interceptor.TimeInterceptor"></bean>
+
+    <bean id="hello" class="Test.Bean.TestClass1">
+        <property name="testField1" value="haha"/>
+    </bean>
+    <bean id="hello2" class="Test.Bean.TestClass2">
+        <property name="testField1" value="haha"/>
+    </bean>
+</Beans>
